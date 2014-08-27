@@ -1,0 +1,19 @@
+{
+    "name": "nodebmc",
+    "version": "0.0.1",
+    "description": "A XBMC RPC client for node.js",
+    "main": "index.js",
+    "keywords": [
+        "xbmc",
+        "jsonrpc",
+        "remote",
+        "api"
+    ],
+    "author": {
+        "name": "gtuk"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "mdns-js": "0.1.0"
+    }
+}
