@@ -12,6 +12,11 @@
     "author": {
         "name": "gtuk"
     },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/gtuk/nodebmc.git"
+    },
+    "homepage": "https://github.com/guerrerocarlos/node-airplay-xbmc",
     "license": "ISC",
     "dependencies": {
         "mdns-js": "0.1.0"
