@@ -32,7 +32,12 @@ var jsonRpcQuery = function(host, port, method, callback) {
             response += data;
         });
         res.on('end', function() {
-            var result = JSON.parse(response);
+            var result;
+            try {
+                result = JSON.parse(response);
+            } catch (err) {
+                callback({status: 'error'});
+            }
             if( !('result' in result) && result.result !== 'ok' ) {
                 callback({status: 'error'});
             }
