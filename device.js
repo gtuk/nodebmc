@@ -38,7 +38,7 @@ var jsonRpcQuery = function(host, port, method, callback) {
             } catch (err) {
                 callback({status: 'error'});
             }
-            if( !('result' in result) && result.result !== 'ok' ) {
+            if( result === undefined || (!('result' in result) && result.result !== 'ok' )) {
                 callback({status: 'error'});
             }
             else {
